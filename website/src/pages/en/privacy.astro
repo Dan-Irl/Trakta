@@ -1,0 +1,97 @@
+---
+import Legal from '../../layouts/Legal.astro';
+import { site } from '../../site';
+---
+
+<Legal
+  lang="en"
+  title="Privacy policy"
+  description="How Trakta and trakta.app handle personal data: the app collects nothing, everything stays on your phone."
+  alternate="/integritet/"
+>
+  <div class="summary">
+    <p>
+      <strong>In short:</strong> Trakta collects no personal data. Everything you enter in the app stays on your phone,
+      and nobody else – me included – can see it.
+    </p>
+  </div>
+
+  <h2>Who is responsible</h2>
+  <p>
+    Trakta is developed as open source by {site.author} as a private individual. For questions about this policy or your
+    data, reach me at <a href={`mailto:${site.email}`}>{site.email}</a>.
+  </p>
+
+  <h2>The app</h2>
+  <ul>
+    <li>The app has no internet access, no account and no sign-in.</li>
+    <li>
+      Everything you enter – trips, drives, commuting, notes and documents – is stored only on your phone. The database is
+      encrypted, and documents are kept in the app's own private storage.
+    </li>
+    <li>Nothing is sent to me or to anyone else. The app contains no analytics, ads, tracking or crash reporting.</li>
+    <li>
+      The app does not ask for access to your files. When you add a document you pick the file yourself in the phone's
+      file picker, and the app keeps a copy of that one file.
+    </li>
+    <li>
+      If you create a backup, for example to switch phones, it is an encrypted file protected by a password you choose. You
+      decide where the file is saved, for example Google Drive, iCloud Drive or an email to yourself, and that service's
+      terms apply there. Without the password nobody can open the file, including me.
+    </li>
+    <li>If you remove the app, all its data is deleted. There is no copy anywhere else, except backups you saved yourself.</li>
+  </ul>
+
+  <h2>Downloads and GitHub</h2>
+  <p>
+    Trakta's source code is on GitHub, and the Android app is downloaded from there. The download button on trakta.app
+    is a plain link that takes you to GitHub. GitHub is owned by Microsoft and processes technical data such as your IP
+    address when you download the app, under
+    <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub's privacy statement</a>.
+    The same applies if you let an app such as Obtainium fetch updates from GitHub. I can see how many times the app has
+    been downloaded, but not who downloaded it.
+  </p>
+  <p>
+    The test version in Google Play is handled by Google under Google's terms and privacy policy. If you take part in the
+    test, I have the email address you gave to join it and use it only for the test. Apart from that I only receive
+    aggregated statistics from Google Play, such as the number of installs, but nothing that identifies you.
+  </p>
+  <p>
+    Issues and discussions on GitHub are public. Do not post personal data or details from your tax return there. For
+    anything private, email me at <a href={`mailto:${site.email}`}>{site.email}</a> instead.
+  </p>
+
+  <h2>This website</h2>
+  <p>
+    trakta.app is hosted by Cloudflare. Like any web server, Cloudflare processes technical data such
+    as your IP address to deliver the site and protect it from abuse. The site uses no cookies and no analytics, and loads
+    nothing from third parties.
+  </p>
+
+  <h2>If you support Trakta</h2>
+  <p>
+    The "buy me a coffee" button is a plain link to Buy Me a Coffee; this website loads nothing from them. If you choose
+    to support Trakta, the payment happens at Buy Me a Coffee and its payment partners under their terms and privacy
+    policy. I see the name, email address and message you choose to share there, and use them only to thank you.
+  </p>
+
+  <h2>When you email me</h2>
+  <p>
+    If you write to me, I use your email address and what you write to reply. I keep it no longer than needed to handle
+    your message. The legal basis is my legitimate interest in answering questions and bug reports.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    Under the GDPR you have the right to know what data I hold about you, to have it corrected or deleted, and to object
+    to its processing. As the app collects nothing, I normally hold no data about you at all apart from any email you
+    have sent and, if you take part in the Google Play test, your email address there. Contact me at <a href={`mailto:${site.email}`}>{site.email}</a>. You can also complain to the Swedish
+    Authority for Privacy Protection, <a href="https://www.imy.se/en/" rel="noopener">imy.se</a>.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If the app or this website changes in a way that affects your data, I will update this policy and the date at the
+    top of the page.
+  </p>
+</Legal>

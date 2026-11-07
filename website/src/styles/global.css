@@ -1,0 +1,211 @@
+/* The app's design tokens (design/DESIGN.md) as CSS. No web fonts: like
+   the app, the site uses the platform's own font, and loads nothing from
+   third parties. */
+
+:root {
+  --primary: #1d58a7;
+  --navy: #0f2942;
+  --muted: #64748b;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --subtle: #f1f5f9;
+  --border: #e2e8f0;
+  --positive: #047857;
+  --warning: #b45309;
+
+  --text: var(--navy);
+  --primary-tint: rgb(29 88 167 / 0.1);
+  --positive-tint: rgb(4 120 87 / 0.1);
+
+  --radius: 8px;
+  --radius-card: 16px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --content: 1120px;
+
+  --font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Fingerprints and commands. Also only the platform's own fonts. */
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Roboto Mono', 'Liberation Mono', monospace;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #8ab4f8;
+    --navy: #e2e8f0;
+    --muted: #94a3b8;
+    --background: #0b1724;
+    --surface: #0f2133;
+    --subtle: #132a40;
+    --border: #1e3a55;
+    --positive: #34d399;
+    --primary-tint: rgb(138 180 248 / 0.12);
+    --positive-tint: rgb(52 211 153 / 0.12);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--primary);
+  text-underline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0 0 var(--space-md);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 var(--space-md);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.section-head {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: var(--space-md);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: var(--space-lg);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: var(--surface);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.button:hover {
+  border-color: var(--primary);
+}
+
+.button.primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .button.primary {
+    color: #0b1724;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 64px 0;
+  }
+  .container {
+    padding: 0 var(--space-md);
+  }
+}

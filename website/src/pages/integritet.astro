@@ -1,0 +1,100 @@
+---
+import Legal from '../layouts/Legal.astro';
+import { site } from '../site';
+---
+
+<Legal
+  lang="sv"
+  title="Integritetspolicy"
+  description="Hur Trakta och trakta.app hanterar personuppgifter: appen samlar inte in något, allt stannar i din telefon."
+  alternate="/en/privacy/"
+>
+  <div class="summary">
+    <p>
+      <strong>Kort sagt:</strong> Trakta samlar inte in några personuppgifter. Allt du registrerar i appen stannar i din
+      telefon, och ingen annan – inte heller jag – kan se det.
+    </p>
+  </div>
+
+  <h2>Vem ansvarar</h2>
+  <p>
+    Trakta utvecklas som öppen källkod av {site.author} som privatperson. Har du frågor om den här policyn eller om dina
+    uppgifter når du mig på <a href={`mailto:${site.email}`}>{site.email}</a>.
+  </p>
+
+  <h2>Appen</h2>
+  <ul>
+    <li>Appen har ingen internetåtkomst, inget konto och ingen inloggning.</li>
+    <li>
+      Allt du registrerar – resor, körningar, pendling, anteckningar och dokument – sparas bara i telefonen. Databasen är
+      krypterad och dokument sparas i appens egen, privata lagring.
+    </li>
+    <li>Ingenting skickas till mig eller till någon annan. Appen innehåller ingen analys, reklam, spårning eller kraschrapportering.</li>
+    <li>
+      Appen ber inte om tillgång till dina filer. När du lägger till ett dokument väljer du själv filen i telefonens
+      filväljare, och appen sparar en kopia av just den filen.
+    </li>
+    <li>
+      Om du skapar en säkerhetskopia, till exempel för att byta telefon, blir det en krypterad fil som skyddas av ett
+      lösenord du väljer. Du bestämmer själv var filen sparas, till exempel i Google Drive, iCloud Drive eller i ett mejl
+      till dig själv, och där gäller den tjänstens villkor. Utan lösenordet kan ingen öppna filen, inte heller jag.
+    </li>
+    <li>Tar du bort appen raderas alla uppgifter i den. Det finns ingen kopia någon annanstans, utom säkerhetskopior du själv har sparat.</li>
+  </ul>
+
+  <h2>Nedladdningar och GitHub</h2>
+  <p>
+    Källkoden till Trakta finns på GitHub, och Android-appen laddas ner därifrån. Nedladdningsknappen på trakta.app är
+    en vanlig länk som skickar dig vidare till GitHub. GitHub ägs av Microsoft och behandlar tekniska uppgifter som din
+    IP-adress när du laddar ner appen, enligt
+    <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHubs integritetspolicy</a>.
+    Det gäller också om du låter en app som Obtainium hämta uppdateringar från GitHub. Jag kan se hur många gånger appen
+    har laddats ner, men inte vem som har laddat ner den.
+  </p>
+  <p>
+    Testversionen i Google Play hanteras av Google enligt Googles villkor och integritetspolicy. Är du med i testet har
+    jag den e-postadress du har lämnat för att få tillgång till det och använder den bara för testet. I övrigt får jag
+    bara sammanställd statistik från Google Play, till exempel antal installationer, men inga uppgifter som
+    identifierar dig.
+  </p>
+  <p>
+    Ärenden (issues) och diskussioner på GitHub är offentliga. Skriv inte personuppgifter eller uppgifter från din
+    deklaration där. Gäller det något privat, mejla mig i stället på <a href={`mailto:${site.email}`}>{site.email}</a>.
+  </p>
+
+  <h2>Webbplatsen</h2>
+  <p>
+    trakta.app drivs av Cloudflare. Som alla webbservrar behandlar Cloudflare tekniska uppgifter som
+    din IP-adress för att kunna leverera sidan och skydda den mot missbruk. Webbplatsen använder inga kakor (cookies),
+    ingen besöksstatistik och laddar ingenting från tredje part.
+  </p>
+
+  <h2>Om du stöttar Trakta</h2>
+  <p>
+    Knappen för att bjuda på en kaffe är en vanlig länk till Buy Me a Coffee. Webbplatsen laddar inget från dem. Väljer du
+    att stötta Trakta sker betalningen hos Buy Me a Coffee och deras betalpartner enligt deras villkor och
+    integritetspolicy. Jag får se det namn, den e-postadress och det meddelande du väljer att dela där, och använder det
+    bara för att kunna tacka dig.
+  </p>
+
+  <h2>När du mejlar mig</h2>
+  <p>
+    Skriver du till mig använder jag din e-postadress och det du skriver för att svara dig. Jag sparar det inte längre än
+    vad som behövs för att hantera ärendet. Den rättsliga grunden är mitt berättigade intresse av att kunna svara på
+    frågor och felrapporter.
+  </p>
+
+  <h2>Dina rättigheter</h2>
+  <p>
+    Enligt dataskyddsförordningen (GDPR) har du rätt att få veta vilka uppgifter jag har om dig, att få dem rättade eller
+    raderade och att invända mot behandlingen. Eftersom appen inte samlar in något har jag normalt inga uppgifter om dig
+    alls, utöver eventuell e-post du har skickat och, om du är med i testet i Google Play, din e-postadress där. Kontakta mig på <a href={`mailto:${site.email}`}>{site.email}</a>.
+    Du kan också klaga till Integritetsskyddsmyndigheten, <a href="https://www.imy.se" rel="noopener">imy.se</a>.
+  </p>
+
+  <h2>Ändringar</h2>
+  <p>
+    Om appen eller webbplatsen ändras på ett sätt som påverkar dina uppgifter uppdaterar jag den här policyn och datumet
+    överst på sidan.
+  </p>
+</Legal>

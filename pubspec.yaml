@@ -1,0 +1,21 @@
+name: trakta_workspace
+description: Trakta monorepo (pub workspace root). Not published.
+publish_to: none
+
+environment:
+  sdk: ^3.8.0
+
+workspace:
+  - packages/trakta_core
+  - apps/trakta_app
+  - tool
+
+dev_dependencies:
+  lints: ">=5.0.0 <7.0.0"
+
+# Encrypted SQLite (SQLite3MultipleCiphers) via the sqlite3 package's build hook.
+# See docs/architecture.md and https://drift.simonbinder.eu/platforms/encryption/
+hooks:
+  user_defines:
+    sqlite3:
+      source: sqlite3mc

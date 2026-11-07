@@ -1,0 +1,37 @@
+Trakta keeps track of your allowances and deductions for work travel in Sweden through the year, and shows which amount goes in which box of your tax return.
+
+PER DIEM (TRAKTAMENTE)
+• Business trips in Sweden and abroad, with the standard amounts (normalbelopp) for every country
+• Full and half days, night allowance and reductions for free meals, day by day
+• Meals and lodging for the whole trip, with changes for single days
+• Compare with what your employer paid: tax-free, taxable and what you can deduct (box 1.2 and 2.2)
+• Deduction basis for sole traders (enskild firma)
+
+BUSINESS DRIVING (MILERSÄTTNING)
+• Driving log (körjournal) with odometer readings or distance
+• Your own car or a company car: petrol, diesel, plug-in hybrid or electric
+• Car allowance from your employer, congestion tax and tolls
+
+COMMUTING (RESEAVDRAG)
+• A weekly commuting schedule: public holidays, business trips and days off are left out
+• The 15,000 kr limit, the 5 km rule and costs for congestion tax, fees and parking
+• So far this year, plus a projection for the full year
+
+OVERVIEW AND EXPLANATIONS
+• The start screen shows your expected deduction for the year
+• "Why?" next to every amount shows the rule behind it
+• Keep tickets, bookings and receipts with the trip or drive
+
+YOUR DATA STAYS ON YOUR PHONE
+• No internet access, no account, no ads and no tracking
+• Everything is stored encrypted on your phone
+• Open source (Apache-2.0): anyone can check how the app calculates
+• Switching phones? Make a password-protected backup that works between Android and iPhone
+• Completely free
+
+Swedish and English, with the official Swedish terms kept visible. Income year 2026; the app is updated before each new income year.
+
+GOOD TO KNOW
+Trakta does not apply the reduced allowance for long stays (more than three months at the same place). If you have such a trip, check the amounts yourself.
+
+Trakta is not tax advice and is not affiliated with Skatteverket (the Swedish Tax Agency). The calculations follow Skatteverket's published standard amounts and rules, but you are responsible for your own tax return.

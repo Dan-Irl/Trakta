@@ -1,0 +1,29 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+build/
+pubspec_overrides.yaml
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+coverage/
+
+# Local dev logs written by tool/bin/dev.dart
+.dev-logs/
+
+# Images flutter test writes when a golden comparison fails
+failures/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated code (recreated by tool/dev.ps1 and CI)
+*.g.dart
+apps/trakta_app/lib/l10n/app_localizations*.dart
+# Widget Preview related
+.widget_preview/

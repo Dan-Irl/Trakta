@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest something Trakta should do.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Trakta stays offline, free and focused on Swedish work travel deductions (per diem, business driving, commuting). Payroll, bookkeeping and filing the tax return are out of scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do?
+      description: The situation and what is hard about it today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could Trakta help?
+  - type: input
+    id: source
+    attributes:
+      label: Skatteverket source (if it is about a tax rule)

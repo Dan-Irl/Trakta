@@ -1,0 +1,94 @@
+---
+import { t, type Lang } from '../i18n';
+
+// The home page's download buttons. Android goes to the download page (APK
+// from GitHub releases); iPhone is not available yet, so it is shown as
+// "coming later" and is not a link. No store badges or platform logos.
+interface Props {
+  lang: Lang;
+}
+const c = t[Astro.props.lang];
+---
+
+<div class="get">
+  <a class="dl" href={c.download.href}>
+    <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22">
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"
+      />
+    </svg>
+    <span class="label">
+      <small>{c.get.downloadFor}</small>
+      <strong>{c.get.android}</strong>
+    </span>
+  </a>
+  <a class="dl soon" role="link" aria-disabled="true">
+    <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22">
+      <path
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 7v5l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+      />
+    </svg>
+    <span class="label">
+      <small>{c.get.later}</small>
+      <strong>{c.get.iphone}</strong>
+    </span>
+  </a>
+</div>
+
+<style>
+  .get {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .dl {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 8px 18px 8px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--navy);
+    background: var(--navy);
+    color: var(--background);
+    text-decoration: none;
+    line-height: 1.15;
+    transition: filter 0.15s;
+  }
+
+  .dl:not(.soon):hover {
+    filter: brightness(1.15);
+  }
+
+  .dl.soon {
+    background: var(--surface);
+    color: var(--muted);
+    border: 1px dashed var(--border);
+    cursor: default;
+  }
+
+  .label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  small {
+    font-size: 0.72rem;
+    opacity: 0.85;
+  }
+
+  strong {
+    font-size: 1.05rem;
+  }
+</style>

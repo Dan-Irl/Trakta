@@ -1,0 +1,52 @@
+# Shared setup for every job that builds or tests the app: Flutter, pub get and
+# code generation, plus Java and the Android NDK for Android builds.
+name: Set up the app
+description: Flutter, dependencies and generated code; optionally Java and the Android NDK.
+
+inputs:
+  android:
+    description: Also set up Java and the NDK that Flutter's Gradle plugin asks for.
+    default: 'false'
+  cache:
+    description: Cache the Flutter SDK. Release builds turn it off, so a cache written elsewhere can never end up in a published app.
+    default: 'true'
+
+runs:
+  using: composite
+  steps:
+    - if: inputs.android == 'true'
+      uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4.9.1
+      with:
+        distribution: temurin
+        java-version: '17'
+
+    # The exact Flutter version comes from .fvmrc (also read by FVM), so every
+    # build uses the same SDK. Change it there to upgrade Flutter.
+    - id: flutter-version
+      shell: bash
+      run: echo "version=$(jq -r .flutter .fvmrc)" >> "$GITHUB_OUTPUT"
+
+    - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2.23.0
+      with:
+        channel: stable
+        flutter-version: ${{ steps.flutter-version.outputs.version }}
+        cache: ${{ inputs.cache == 'true' }}
+
+    # Gradle would otherwise download the NDK in the middle of the build, and
+    # both Gradle and sdkmanager failed on GitHub's runners with cut-off
+    # downloads. The script fetches the exact version Flutter pins straight
+    # from Google's SDK repository, resumable and checksum-verified.
+    - if: inputs.android == 'true'
+      name: Install the Android NDK
+      shell: bash
+      run: bash "$GITHUB_ACTION_PATH/install-ndk.sh"
+
+    - shell: bash
+      run: flutter pub get
+
+    - name: Generate code
+      shell: bash
+      working-directory: apps/trakta_app
+      run: |
+        flutter gen-l10n
+        dart run build_runner build

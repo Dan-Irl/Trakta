@@ -1,0 +1,22 @@
+# Cloudflare Pages response headers. Astro copies this file into dist/ as is.
+# The site loads nothing from third parties, so the Content-Security-Policy
+# allows only the site itself. (.app domains are HTTPS-only; HSTS makes that
+# explicit for browsers.)
+/*
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'; object-src 'none'
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  X-Frame-Options: DENY
+
+# Hashed build assets never change: cache them for a year.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Only trakta.app should show up in search results, not the pages.dev
+# addresses of the production and preview deployments.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex

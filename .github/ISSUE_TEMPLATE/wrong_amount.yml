@@ -1,0 +1,62 @@
+name: Wrong amount or rule (fel belopp eller regel)
+description: Trakta calculates something differently from Skatteverket's rules. Svenska går bra.
+labels: [rules]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These reports matter most: people file their tax return from these numbers. Please describe the situation without personal data (no names, addresses or registration numbers).
+        Du kan skriva på svenska.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Per diem in Sweden (traktamente)
+        - Per diem abroad (utlandstraktamente)
+        - Business driving (milersättning)
+        - Commuting (reseavdrag)
+        - What the employer paid (box 1.2 / 2.2)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Income year
+      placeholder: '2026'
+    validations:
+      required: true
+  - type: textarea
+    id: situation
+    attributes:
+      label: The situation
+      description: Dates and times, countries, meals and lodging, vehicle, what the employer paid; whatever the amount depends on.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What Trakta shows
+      description: The amount, and the explanation under "Why?" if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should be, and why
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Skatteverket source
+      description: A link to the Skatteverket page, general advice (SKV A) or worked example that shows the right answer.
+      placeholder: https://www.skatteverket.se/...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Trakta version
+      description: Shown at the bottom of Settings.

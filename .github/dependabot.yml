@@ -1,0 +1,29 @@
+# Weekly dependency updates as pull requests, grouped so there are few of
+# them. Every update goes through CI like any other change; major versions
+# of app packages still need a test on a real phone before a release.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directories: ['/', '/.github/actions/setup-app']
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ['*']
+
+  - package-ecosystem: pub
+    directory: '/'
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      pub-minor-and-patch:
+        update-types: [minor, patch]
+
+  - package-ecosystem: npm
+    directory: '/website'
+    schedule:
+      interval: weekly
+    groups:
+      website:
+        patterns: ['*']

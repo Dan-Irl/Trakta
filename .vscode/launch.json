@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Trakta (debug)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "apps/trakta_app",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "Trakta (profile)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "apps/trakta_app",
+      "program": "lib/main.dart",
+      "flutterMode": "profile"
+    }
+  ]
+}

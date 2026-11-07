@@ -1,0 +1,1207 @@
+{
+ "results": [
+  {
+   "år": "2026",
+   "land eller område": "Albanien",
+   "landskod": "AL",
+   "normalbelopp": 351
+  },
+  {
+   "år": "2026",
+   "land eller område": "Algeriet",
+   "landskod": "DZ",
+   "normalbelopp": "334"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Amerikanska Samoa",
+   "landskod": "AS",
+   "normalbelopp": 889
+  },
+  {
+   "år": "2026",
+   "land eller område": "Angola",
+   "landskod": "AO",
+   "normalbelopp": "540"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Anguilla",
+   "landskod": "AI",
+   "normalbelopp": 1037
+  },
+  {
+   "år": "2026",
+   "land eller område": "Antigua och Barbuda",
+   "landskod": "AG",
+   "normalbelopp": "742"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Argentina",
+   "landskod": "AR",
+   "normalbelopp": "388"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Armenien",
+   "landskod": "AM",
+   "normalbelopp": 469
+  },
+  {
+   "år": "2026",
+   "land eller område": "Aruba",
+   "landskod": "AW",
+   "normalbelopp": "864"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Australien",
+   "landskod": "AU",
+   "normalbelopp": 727
+  },
+  {
+   "år": "2026",
+   "land eller område": "Azerbajdzjan",
+   "landskod": "AZ",
+   "normalbelopp": 437
+  },
+  {
+   "år": "2026",
+   "land eller område": "Bahamas",
+   "landskod": "BS",
+   "normalbelopp": "1146"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Bahrain",
+   "landskod": "BH",
+   "normalbelopp": 881
+  },
+  {
+   "år": "2026",
+   "land eller område": "Bangladesh",
+   "landskod": "BD",
+   "normalbelopp": 399
+  },
+  {
+   "år": "2026",
+   "land eller område": "Barbados",
+   "landskod": "BB",
+   "normalbelopp": "930"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Belarus",
+   "landskod": "BY",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Belgien",
+   "landskod": "BE",
+   "normalbelopp": 897
+  },
+  {
+   "år": "2026",
+   "land eller område": "Belize",
+   "landskod": "BZ",
+   "normalbelopp": 591
+  },
+  {
+   "år": "2026",
+   "land eller område": "Benin",
+   "landskod": "BJ",
+   "normalbelopp": "562"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Bermuda",
+   "landskod": "BM",
+   "normalbelopp": 1217
+  },
+  {
+   "år": "2026",
+   "land eller område": "Bolivia",
+   "landskod": "BO",
+   "normalbelopp": "406"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Bonaire",
+   "landskod": "BQ",
+   "normalbelopp": "722"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Bosnien-Hercegovina",
+   "landskod": "BA",
+   "normalbelopp": 355
+  },
+  {
+   "år": "2026",
+   "land eller område": "Botswana",
+   "landskod": "BW",
+   "normalbelopp": "358"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Brasilien",
+   "landskod": "BR",
+   "normalbelopp": "376"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Brunei Darussalam",
+   "landskod": "BN",
+   "normalbelopp": "458"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Bulgarien",
+   "landskod": "BG",
+   "normalbelopp": 459
+  },
+  {
+   "år": "2026",
+   "land eller område": "Burkina Faso",
+   "landskod": "BF",
+   "normalbelopp": 421
+  },
+  {
+   "år": "2026",
+   "land eller område": "Burundi",
+   "landskod": "BI",
+   "normalbelopp": "426"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Burma",
+   "landskod": "",
+   "normalbelopp": "Se Myanmar"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Caymanöarna",
+   "landskod": "KY",
+   "normalbelopp": 887
+  },
+  {
+   "år": "2026",
+   "land eller område": "Centralafrikanska republiken",
+   "landskod": "CF",
+   "normalbelopp": 459
+  },
+  {
+   "år": "2026",
+   "land eller område": "Chile",
+   "landskod": "CL",
+   "normalbelopp": 479
+  },
+  {
+   "år": "2026",
+   "land eller område": "Colombia",
+   "landskod": "CO",
+   "normalbelopp": "378"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Cooköarna",
+   "landskod": "CK",
+   "normalbelopp": 557
+  },
+  {
+   "år": "2026",
+   "land eller område": "Costa Rica",
+   "landskod": "CR",
+   "normalbelopp": 677
+  },
+  {
+   "år": "2026",
+   "land eller område": "Curacao",
+   "landskod": "CW",
+   "normalbelopp": 645
+  },
+  {
+   "år": "2026",
+   "land eller område": "Cypern",
+   "landskod": "CY",
+   "normalbelopp": 601
+  },
+  {
+   "år": "2026",
+   "land eller område": "Danmark",
+   "landskod": "DK",
+   "normalbelopp": "1226"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Djibouti",
+   "landskod": "DJ",
+   "normalbelopp": 619
+  },
+  {
+   "år": "2026",
+   "land eller område": "Dominikanska republiken",
+   "landskod": "DO",
+   "normalbelopp": 457
+  },
+  {
+   "år": "2026",
+   "land eller område": "Ecuador",
+   "landskod": "EC",
+   "normalbelopp": 573
+  },
+  {
+   "år": "2026",
+   "land eller område": "Egypten",
+   "landskod": "EG",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Ekvatorialguinea",
+   "landskod": "GQ",
+   "normalbelopp": "652"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Elfenbenskusten",
+   "landskod": "CI",
+   "normalbelopp": 755
+  },
+  {
+   "år": "2026",
+   "land eller område": "El Salvador",
+   "landskod": "SV",
+   "normalbelopp": "462"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Eritrea",
+   "landskod": "ER",
+   "normalbelopp": 399
+  },
+  {
+   "år": "2026",
+   "land eller område": "Estland",
+   "landskod": "EE",
+   "normalbelopp": 683
+  },
+  {
+   "år": "2026",
+   "land eller område": "Eswatini",
+   "landskod": "SZ",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Etiopien",
+   "landskod": "ET",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Fiji",
+   "landskod": "FJ",
+   "normalbelopp": 415
+  },
+  {
+   "år": "2026",
+   "land eller område": "Filippinerna",
+   "landskod": "PH",
+   "normalbelopp": "466"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Finland",
+   "landskod": "FI",
+   "normalbelopp": "968"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Frankrike",
+   "landskod": "FR",
+   "normalbelopp": "850"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Franska Guyana",
+   "landskod": "GF",
+   "normalbelopp": 735
+  },
+  {
+   "år": "2026",
+   "land eller område": "Franska Polynesien",
+   "landskod": "PF",
+   "normalbelopp": "926"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Förenade Arabemiraten",
+   "landskod": "AE",
+   "normalbelopp": 883
+  },
+  {
+   "år": "2026",
+   "land eller område": "Gabon",
+   "landskod": "GA",
+   "normalbelopp": "650"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Gambia",
+   "landskod": "GM",
+   "normalbelopp": "304"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Georgien",
+   "landskod": "GE",
+   "normalbelopp": 331
+  },
+  {
+   "år": "2026",
+   "land eller område": "Ghana",
+   "landskod": "GH",
+   "normalbelopp": "580"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Gibraltar",
+   "landskod": "GI",
+   "normalbelopp": "654"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Grekland",
+   "landskod": "GR",
+   "normalbelopp": 695
+  },
+  {
+   "år": "2026",
+   "land eller område": "Grenada",
+   "landskod": "GD",
+   "normalbelopp": 603
+  },
+  {
+   "år": "2026",
+   "land eller område": "Grönland",
+   "landskod": "",
+   "normalbelopp": "Se Danmark"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Guadeloupe",
+   "landskod": "GP",
+   "normalbelopp": 749
+  },
+  {
+   "år": "2026",
+   "land eller område": "Guam",
+   "landskod": "GU",
+   "normalbelopp": 765
+  },
+  {
+   "år": "2026",
+   "land eller område": "Guatemala",
+   "landskod": "GT",
+   "normalbelopp": 561
+  },
+  {
+   "år": "2026",
+   "land eller område": "Guinea",
+   "landskod": "GN",
+   "normalbelopp": "566"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Guyana",
+   "landskod": "GY",
+   "normalbelopp": "716"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Haiti",
+   "landskod": "HT",
+   "normalbelopp": "870"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Honduras",
+   "landskod": "HN",
+   "normalbelopp": 423
+  },
+  {
+   "år": "2026",
+   "land eller område": "Hong Kong",
+   "landskod": "HK",
+   "normalbelopp": 895
+  },
+  {
+   "år": "2026",
+   "land eller område": "Indien",
+   "landskod": "IN",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Indonesien",
+   "landskod": "ID",
+   "normalbelopp": "418"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Irak",
+   "landskod": "IQ",
+   "normalbelopp": "590"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Iran",
+   "landskod": "",
+   "normalbelopp": "Se Övriga länder och områden"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Irland",
+   "landskod": "IE",
+   "normalbelopp": "1038"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Island",
+   "landskod": "IS",
+   "normalbelopp": 1125
+  },
+  {
+   "år": "2026",
+   "land eller område": "Israel",
+   "landskod": "IL",
+   "normalbelopp": "956"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Italien",
+   "landskod": "IT",
+   "normalbelopp": "802"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Jamaica",
+   "landskod": "JM",
+   "normalbelopp": 425
+  },
+  {
+   "år": "2026",
+   "land eller område": "Japan",
+   "landskod": "JP",
+   "normalbelopp": "386"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Jordanien",
+   "landskod": "JO",
+   "normalbelopp": 803
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kambodja",
+   "landskod": "KH",
+   "normalbelopp": "532"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kamerun",
+   "landskod": "CM",
+   "normalbelopp": "524"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kanada",
+   "landskod": "CA",
+   "normalbelopp": 895
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kazakstan",
+   "landskod": "KZ",
+   "normalbelopp": 353
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kenya",
+   "landskod": "KE",
+   "normalbelopp": "472"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kina",
+   "landskod": "CN",
+   "normalbelopp": 581
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kirgizistan",
+   "landskod": "KG",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kiribati",
+   "landskod": "KI",
+   "normalbelopp": 309
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kongo (Brazzaville)",
+   "landskod": "CG",
+   "normalbelopp": "734"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kongo (Demokratiska Rep.)",
+   "landskod": "CD",
+   "normalbelopp": "990"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kosovo",
+   "landskod": "XK",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kroatien",
+   "landskod": "HR",
+   "normalbelopp": "550"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kuba",
+   "landskod": "CU",
+   "normalbelopp": 587
+  },
+  {
+   "år": "2026",
+   "land eller område": "Kuwait",
+   "landskod": "KW",
+   "normalbelopp": 849
+  },
+  {
+   "år": "2026",
+   "land eller område": "Laos",
+   "landskod": "LA",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Lesotho",
+   "landskod": "LS",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Lettland",
+   "landskod": "LV",
+   "normalbelopp": 763
+  },
+  {
+   "år": "2026",
+   "land eller område": "Libanon",
+   "landskod": "",
+   "normalbelopp": "Se Övriga länder och områden"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Liberia",
+   "landskod": "LR",
+   "normalbelopp": 649
+  },
+  {
+   "år": "2026",
+   "land eller område": "Libyen",
+   "landskod": "LY",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Liechtenstein",
+   "landskod": "LI",
+   "normalbelopp": "1120"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Litauen",
+   "landskod": "LT",
+   "normalbelopp": 635
+  },
+  {
+   "år": "2026",
+   "land eller område": "Luxemburg",
+   "landskod": "LU",
+   "normalbelopp": 953
+  },
+  {
+   "år": "2026",
+   "land eller område": "Macao",
+   "landskod": "MO",
+   "normalbelopp": "590"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Madagaskar",
+   "landskod": "MG",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Malawi",
+   "landskod": "MW",
+   "normalbelopp": "308"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Malaysia",
+   "landskod": "MY",
+   "normalbelopp": 319
+  },
+  {
+   "år": "2026",
+   "land eller område": "Maldiverna",
+   "landskod": "MV",
+   "normalbelopp": 503
+  },
+  {
+   "år": "2026",
+   "land eller område": "Mali",
+   "landskod": "ML",
+   "normalbelopp": "488"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Malta",
+   "landskod": "MT",
+   "normalbelopp": 659
+  },
+  {
+   "år": "2026",
+   "land eller område": "Marocko",
+   "landskod": "MA",
+   "normalbelopp": 507
+  },
+  {
+   "år": "2026",
+   "land eller område": "Martinique",
+   "landskod": "MQ",
+   "normalbelopp": 753
+  },
+  {
+   "år": "2026",
+   "land eller område": "Mauretanien",
+   "landskod": "MR",
+   "normalbelopp": "350"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Mauritius",
+   "landskod": "MU",
+   "normalbelopp": 349
+  },
+  {
+   "år": "2026",
+   "land eller område": "Mexiko",
+   "landskod": "MX",
+   "normalbelopp": "562"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Mikronesiska federationen",
+   "landskod": "FM",
+   "normalbelopp": "560"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Mocambique",
+   "landskod": "MZ",
+   "normalbelopp": 403
+  },
+  {
+   "år": "2026",
+   "land eller område": "Moldavien",
+   "landskod": "MD",
+   "normalbelopp": "414"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Monaco",
+   "landskod": "MC",
+   "normalbelopp": 1073
+  },
+  {
+   "år": "2026",
+   "land eller område": "Mongoliet",
+   "landskod": "MN",
+   "normalbelopp": 307
+  },
+  {
+   "år": "2026",
+   "land eller område": "Montenegro",
+   "landskod": "ME",
+   "normalbelopp": 391
+  },
+  {
+   "år": "2026",
+   "land eller område": "Myanmar",
+   "landskod": "MM",
+   "normalbelopp": 367
+  },
+  {
+   "år": "2026",
+   "land eller område": "Namibia",
+   "landskod": "NA",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Nederländerna",
+   "landskod": "NL",
+   "normalbelopp": 745
+  },
+  {
+   "år": "2026",
+   "land eller område": "Nepal",
+   "landskod": "NP",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Nicaragua",
+   "landskod": "NI",
+   "normalbelopp": 469
+  },
+  {
+   "år": "2026",
+   "land eller område": "Niger",
+   "landskod": "NE",
+   "normalbelopp": "394"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Nigeria",
+   "landskod": "",
+   "normalbelopp": "Se övriga länder och områden"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Nordmakedonien",
+   "landskod": "MK",
+   "normalbelopp": "312"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Norge",
+   "landskod": "NO",
+   "normalbelopp": "1054"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Nya Kaledonien",
+   "landskod": "NC",
+   "normalbelopp": "862"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Nya Zeeland",
+   "landskod": "NZ",
+   "normalbelopp": 525
+  },
+  {
+   "år": "2026",
+   "land eller område": "Oman",
+   "landskod": "OM",
+   "normalbelopp": "822"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Pakistan",
+   "landskod": "PK",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Panama",
+   "landskod": "PA",
+   "normalbelopp": 673
+  },
+  {
+   "år": "2026",
+   "land eller område": "Papua Nya Guinea",
+   "landskod": "PG",
+   "normalbelopp": 507
+  },
+  {
+   "år": "2026",
+   "land eller område": "Paraguay",
+   "landskod": "PY",
+   "normalbelopp": 349
+  },
+  {
+   "år": "2026",
+   "land eller område": "Peru",
+   "landskod": "PE",
+   "normalbelopp": "482"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Polen",
+   "landskod": "PL",
+   "normalbelopp": 597
+  },
+  {
+   "år": "2026",
+   "land eller område": "Portugal",
+   "landskod": "PT",
+   "normalbelopp": "616"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Puerto Rico",
+   "landskod": "PR",
+   "normalbelopp": 701
+  },
+  {
+   "år": "2026",
+   "land eller område": "Qatar",
+   "landskod": "QA",
+   "normalbelopp": 837
+  },
+  {
+   "år": "2026",
+   "land eller område": "Réunion",
+   "landskod": "RE",
+   "normalbelopp": 751
+  },
+  {
+   "år": "2026",
+   "land eller område": "Rumänien",
+   "landskod": "RO",
+   "normalbelopp": "414"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Rwanda",
+   "landskod": "RW",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Ryssland",
+   "landskod": "RU",
+   "normalbelopp": 661
+  },
+  {
+   "år": "2026",
+   "land eller område": "Saint Lucia",
+   "landskod": "LC",
+   "normalbelopp": "706"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Saint Vincent och Grenadinerna",
+   "landskod": "VC",
+   "normalbelopp": 441
+  },
+  {
+   "år": "2026",
+   "land eller område": "Salomonöarna",
+   "landskod": "SB",
+   "normalbelopp": "648"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Samoa, Självständiga staten",
+   "landskod": "WS",
+   "normalbelopp": 537
+  },
+  {
+   "år": "2026",
+   "land eller område": "San Marino",
+   "landskod": "",
+   "normalbelopp": "Se Italien"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Saudiarabien",
+   "landskod": "SA",
+   "normalbelopp": "1016"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Schweiz",
+   "landskod": "CH",
+   "normalbelopp": "1332"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Senegal",
+   "landskod": "SN",
+   "normalbelopp": "626"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Serbien",
+   "landskod": "RS",
+   "normalbelopp": 533
+  },
+  {
+   "år": "2026",
+   "land eller område": "Seychellerna",
+   "landskod": "SC",
+   "normalbelopp": "846"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Sierra Leone",
+   "landskod": "SL",
+   "normalbelopp": 345
+  },
+  {
+   "år": "2026",
+   "land eller område": "Singapore",
+   "landskod": "SG",
+   "normalbelopp": 845
+  },
+  {
+   "år": "2026",
+   "land eller område": "Sint Maarten",
+   "landskod": "SX",
+   "normalbelopp": "724"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Slovakien",
+   "landskod": "SK",
+   "normalbelopp": 737
+  },
+  {
+   "år": "2026",
+   "land eller område": "Slovenien",
+   "landskod": "SI",
+   "normalbelopp": "574"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Spanien",
+   "landskod": "ES",
+   "normalbelopp": 635
+  },
+  {
+   "år": "2026",
+   "land eller område": "Sri Lanka",
+   "landskod": "LK",
+   "normalbelopp": "424"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Storbritannien och Nordirland",
+   "landskod": "GB",
+   "normalbelopp": 901
+  },
+  {
+   "år": "2026",
+   "land eller område": "Sudan",
+   "landskod": "",
+   "normalbelopp": "Se Övriga länder och områden"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Surinam",
+   "landskod": "SR",
+   "normalbelopp": "424"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Swaziland",
+   "landskod": "",
+   "normalbelopp": "Se Eswatini"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Sydafrika",
+   "landskod": "ZA",
+   "normalbelopp": 349
+  },
+  {
+   "år": "2026",
+   "land eller område": "Sydkorea",
+   "landskod": "KR",
+   "normalbelopp": 517
+  },
+  {
+   "år": "2026",
+   "land eller område": "Tadzjikistan",
+   "landskod": "TJ",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Taiwan",
+   "landskod": "TW",
+   "normalbelopp": "554"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Tanzania",
+   "landskod": "TZ",
+   "normalbelopp": 331
+  },
+  {
+   "år": "2026",
+   "land eller område": "Tchad",
+   "landskod": "TD",
+   "normalbelopp": "580"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Thailand",
+   "landskod": "TH",
+   "normalbelopp": 521
+  },
+  {
+   "år": "2026",
+   "land eller område": "Tjeckien",
+   "landskod": "CZ",
+   "normalbelopp": 695
+  },
+  {
+   "år": "2026",
+   "land eller område": "Togo",
+   "landskod": "TG",
+   "normalbelopp": 533
+  },
+  {
+   "år": "2026",
+   "land eller område": "Tonga",
+   "landskod": "TO",
+   "normalbelopp": "438"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Trinidad och Tobago",
+   "landskod": "TT",
+   "normalbelopp": 801
+  },
+  {
+   "år": "2026",
+   "land eller område": "Tunisien",
+   "landskod": "TN",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Turkiet",
+   "landskod": "TR",
+   "normalbelopp": "366"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Turkmenistan",
+   "landskod": "TM",
+   "normalbelopp": "1454"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Tyskland",
+   "landskod": "DE",
+   "normalbelopp": "760"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Uganda",
+   "landskod": "UG",
+   "normalbelopp": "446"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Ukraina",
+   "landskod": "UA",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Ungern",
+   "landskod": "HU",
+   "normalbelopp": 679
+  },
+  {
+   "år": "2026",
+   "land eller område": "Uruguay",
+   "landskod": "UY",
+   "normalbelopp": 595
+  },
+  {
+   "år": "2026",
+   "land eller område": "USA",
+   "landskod": "US",
+   "normalbelopp": 1049
+  },
+  {
+   "år": "2026",
+   "land eller område": "Uzbekistan",
+   "landskod": "UZ",
+   "normalbelopp": "324"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Vanuatu",
+   "landskod": "VU",
+   "normalbelopp": 603
+  },
+  {
+   "år": "2026",
+   "land eller område": "Venezuela",
+   "landskod": "VE",
+   "normalbelopp": "300"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Vietnam",
+   "landskod": "VN",
+   "normalbelopp": "328"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Zambia",
+   "landskod": "ZM",
+   "normalbelopp": "384"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Zimbabwe",
+   "landskod": "",
+   "normalbelopp": "Se Övriga länder och områden"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Österrike",
+   "landskod": "AT",
+   "normalbelopp": "730"
+  },
+  {
+   "år": "2026",
+   "land eller område": "Östtimor",
+   "landskod": "TL",
+   "normalbelopp": 451
+  },
+  {
+   "år": "2026",
+   "land eller område": "Övriga länder och områden",
+   "landskod": "",
+   "normalbelopp": "470"
+  }
+ ],
+ "offset": 0,
+ "limit": 500,
+ "resultCount": 200
+}

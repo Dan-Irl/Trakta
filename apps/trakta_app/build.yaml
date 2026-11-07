@@ -1,0 +1,13 @@
+targets:
+  $default:
+    builders:
+      drift_dev:
+        options:
+          # Store DateTime columns as UTC ISO-8601 text: readable in exports and
+          # unambiguous (time is stored as UTC plus the IANA zone).
+          store_date_time_values_as_text: true
+          databases:
+            app: lib/data/db/database.dart
+          schema_dir: drift_schemas/
+          # Generated upgrade tests (make-migrations) go here.
+          test_dir: test/drift/

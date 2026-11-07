@@ -1,0 +1,86 @@
+---
+import Legal from '../../layouts/Legal.astro';
+import { site } from '../../site';
+---
+
+<Legal
+  lang="en"
+  title="Terms of use"
+  description="Terms for using Trakta: free, not tax advice, and without warranties."
+  alternate="/villkor/"
+>
+  <div class="summary">
+    <p>
+      <strong>In short:</strong> Trakta is free and a helper, not tax advice. You are responsible for your own tax return
+      and for checking the amounts.
+    </p>
+  </div>
+
+  <h2>About Trakta</h2>
+  <p>
+    Trakta is a free app that helps you keep track of per diem, business driving and commuting deductions in Sweden. It is
+    developed as open source by {site.author} as a private individual. By using the app or this website you accept these
+    terms.
+  </p>
+
+  <h2>Not tax advice</h2>
+  <p>
+    Trakta calculates with Skatteverket's published standard amounts and rules as I have interpreted them. The calculations
+    may contain mistakes or be out of date, and your situation may differ from what the app assumes. Trakta is not tax
+    advice and is not affiliated with Skatteverket (the Swedish Tax Agency).
+  </p>
+
+  <h2>Your responsibility</h2>
+  <ul>
+    <li>You are responsible for what you enter in your tax return. Check the amounts before you submit.</li>
+    <li>Keep the records Skatteverket may ask for, such as receipts and your driving log.</li>
+    <li>If you are unsure, read <a href="https://www.skatteverket.se" rel="noopener">skatteverket.se</a> or ask Skatteverket or a tax advisor.</li>
+  </ul>
+
+  <h2>Your data</h2>
+  <p>
+    Everything you enter is stored only on your phone (see the <a href="/en/privacy/">privacy policy</a>). You are
+    responsible for backing up anything you want to keep. If you remove the app or lose your phone, the data is gone.
+  </p>
+
+  <h2>No warranty</h2>
+  <p>
+    The app and the website are provided as is, without warranties of any kind that they are error-free, complete or fit
+    for a particular purpose.
+  </p>
+
+  <h2>Limitation of liability</h2>
+  <p>
+    To the extent permitted by law, I am not liable for any damage or loss arising from your use of the app or the
+    website, such as incorrect figures in a tax return, tax surcharges or lost data. This does not limit any liability
+    that cannot be limited under mandatory law.
+  </p>
+
+  <h2>Open source and licence</h2>
+  <p>
+    Trakta's source code is licensed under the <a href={`${site.repo}/blob/main/LICENSE`} rel="noopener">Apache License 2.0</a>.
+    When you use, change or distribute the code, the licence applies, with its own disclaimer of warranty and limitation of
+    liability.
+  </p>
+  <p>
+    The licence gives no right to use the name Trakta, the logo or the app icon. They are covered by the
+    <a href={site.trademarks} rel="noopener">trademark policy</a>.
+  </p>
+  <p>
+    Builds made or distributed by others do not come from me. I only stand behind builds downloaded via trakta.app or from
+    the <a href={site.releases} rel="noopener">releases of the GitHub project Dan-Irl/Trakta</a>, and the test version in
+    Google Play.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    The app may change, be updated or stop being developed. These terms may change; the latest version is always here,
+    with the date at the top of the page.
+  </p>
+
+  <h2>Governing law</h2>
+  <p>Swedish law applies to these terms.</p>
+
+  <h2>Contact</h2>
+  <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+</Legal>

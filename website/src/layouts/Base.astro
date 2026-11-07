@@ -1,0 +1,224 @@
+---
+import { Image } from 'astro:assets';
+
+import '../styles/global.css';
+import icon from '../assets/icon.png';
+import { site } from '../site';
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+  /** The same page in the other language, for the switcher and hreflang. */
+  alternate: string;
+}
+
+const { lang, alternate } = Astro.props;
+const c = t[lang];
+const title = Astro.props.title ?? c.meta.title;
+const description = Astro.props.description ?? c.meta.description;
+const canonical = new URL(Astro.url.pathname, site.url).href;
+const home = lang === 'sv' ? '/' : '/en/';
+const [svHref, enHref] = lang === 'sv' ? [Astro.url.pathname, alternate] : [alternate, Astro.url.pathname];
+const year = new Date().getFullYear();
+const trim = (path: string) => path.replace(/\/+$/, '');
+const onDownloadPage = trim(Astro.url.pathname) === trim(c.download.href);
+---
+
+<!doctype html>
+<html lang={c.htmlLang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="sv" href={new URL(svHref, site.url).href} />
+    <link rel="alternate" hreflang="en" href={new URL(enHref, site.url).href} />
+    <link rel="alternate" hreflang="x-default" href={new URL(svHref, site.url).href} />
+    <link rel="icon" type="image/png" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0f2942" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/og-image.png', site.url).href} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={lang === 'sv' ? 'sv_SE' : 'en_GB'} />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <a class="skip visually-hidden" href="#main">{lang === 'sv' ? 'Hoppa till innehållet' : 'Skip to content'}</a>
+    <header class="site-header">
+      <div class="container bar">
+        <a class="brand" href={home} aria-label={`${site.name} – ${lang === 'sv' ? 'startsida' : 'home'}`}>
+          <Image src={icon} alt="" width={36} height={36} loading="eager" />
+          <span>{site.name}</span>
+        </a>
+        <nav aria-label={lang === 'sv' ? 'Huvudmeny' : 'Main'}>
+          <a href={`${home}#features`}>{c.nav.features}</a>
+          <a href={`${home}#mission`}>{c.nav.mission}</a>
+          <a href={`${home}#about`}>{c.nav.about}</a>
+          <a class="nav-download" href={c.download.href} aria-current={onDownloadPage ? 'page' : undefined}>{c.nav.download}</a>
+          <a class="lang" href={alternate} hreflang={lang === 'sv' ? 'en' : 'sv'} lang={lang === 'sv' ? 'en' : 'sv'}>
+            {c.switchLang.label}
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a class="brand" href={home}>
+            <Image src={icon} alt="" width={28} height={28} />
+            <span>{site.name}</span>
+          </a>
+          <nav aria-label={c.footer.label}>
+            <a href={site.repo} rel="noopener">{c.footer.source}</a>
+            <a href={c.footer.privacyHref}>{c.footer.privacy}</a>
+            <a href={c.footer.termsHref}>{c.footer.terms}</a>
+            <a href={`mailto:${site.email}`}>{c.footer.contact}</a>
+            <a href={`${home}#support`}>{c.support.footer}</a>
+          </nav>
+        </div>
+        <p class="disclaimer">{c.footer.disclaimer}</p>
+        <p class="copyright">© {year} {site.author}</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .skip:focus {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    width: auto;
+    height: auto;
+    clip: auto;
+    padding: 8px 12px;
+    background: var(--surface);
+    z-index: 10;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: color-mix(in srgb, var(--background) 85%, transparent);
+    backdrop-filter: saturate(160%) blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .brand img {
+    border-radius: 9px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+  }
+
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  nav a:hover {
+    color: var(--text);
+  }
+
+  .lang {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 12px;
+  }
+
+  /* The download link stays visible on phones, next to the language switch. */
+  nav a.nav-download {
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  nav a.nav-download:hover,
+  nav a.nav-download[aria-current='page'] {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  @media (max-width: 720px) {
+    .bar nav {
+      gap: var(--space-md);
+    }
+
+    .bar nav a:not(.lang):not(.nav-download) {
+      display: none;
+    }
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 0 48px;
+    background: var(--surface);
+  }
+
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  .footer-top img {
+    border-radius: 7px;
+  }
+
+  .footer-top nav {
+    flex-wrap: wrap;
+    column-gap: var(--space-lg);
+    row-gap: var(--space-sm);
+  }
+
+  .disclaimer,
+  .copyright {
+    font-size: 0.875rem;
+    color: var(--muted);
+    max-width: 720px;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+</style>

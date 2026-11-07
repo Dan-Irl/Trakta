@@ -1,0 +1,12 @@
+# Cloudflare Pages redirects. Astro copies this file into dist/ as is.
+# Keep the targets in step with `apk` and `repo` in src/site.ts.
+#
+# /apk is the download button's target: always the newest signed APK, since
+# every GitHub release attaches it as trakta.apk. /kallkod and /source are the
+# addresses the app shows for its source code. 302, so they can change later.
+/apk        https://github.com/Dan-Irl/Trakta/releases/latest/download/trakta.apk  302
+/apk/       https://github.com/Dan-Irl/Trakta/releases/latest/download/trakta.apk  302
+/kallkod    https://github.com/Dan-Irl/Trakta  302
+/kallkod/   https://github.com/Dan-Irl/Trakta  302
+/source     https://github.com/Dan-Irl/Trakta  302
+/source/    https://github.com/Dan-Irl/Trakta  302

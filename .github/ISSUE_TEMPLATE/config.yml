@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea to discuss
+    url: https://github.com/Dan-Irl/Trakta/discussions
+    about: Ask how something works or float an idea before opening an issue.
+  - name: Security problem
+    url: https://github.com/Dan-Irl/Trakta/security/advisories/new
+    about: Report it privately, not in a public issue.
+  - name: A question about your own taxes
+    url: https://www.skatteverket.se
+    about: Trakta is not tax advice and has no connection to Skatteverket. Ask Skatteverket directly.

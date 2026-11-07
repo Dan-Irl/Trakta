@@ -1,0 +1,72 @@
+# The full quality gate: rules sync, code generation, analyze, all three test
+# suites and the offline guarantee. Called by ci.yml on every push and pull
+# request, and by release.yml before anything is built for the stores, so a
+# release can never skip a check that CI runs.
+name: Checks
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - name: CHANGELOG.md has a section for the app version
+        run: |
+          name=$(grep -E '^version:' apps/trakta_app/pubspec.yaml | awk '{print $2}' | cut -d+ -f1)
+          grep -qE "^## \[$name\]" CHANGELOG.md || {
+            echo "::error::CHANGELOG.md has no '## [$name]' section for the version in apps/trakta_app/pubspec.yaml."
+            exit 1
+          }
+      - uses: ./.github/actions/setup-app
+      - name: Rules packs are in sync with app assets
+        run: dart run tool/bin/sync_rules.dart --check
+      - name: Database schema matches its committed snapshot
+        # Testers have data in schema version 1. A table change without a new
+        # schemaVersion, a migration and its snapshot fails here.
+        working-directory: apps/trakta_app
+        run: |
+          dart run drift_dev schema dump lib/data/db/database.dart drift_schemas/app/
+          if [ -n "$(git status --porcelain -- drift_schemas)" ]; then
+            git status --porcelain -- drift_schemas
+            git diff -- drift_schemas | head -60
+            echo "::error::The database schema changed. Bump schemaVersion, add the migration step and run 'dart run drift_dev make-migrations' (see AGENTS.md, Database)."
+            exit 1
+          fi
+      - run: flutter analyze
+      - name: Rules engine golden tests
+        working-directory: packages/trakta_core
+        run: dart test
+      - name: Build tool tests
+        working-directory: tool
+        run: dart test
+      - name: App tests
+        working-directory: apps/trakta_app
+        run: flutter test --timeout 90s
+      - name: Offline guarantee (source manifest + dependencies)
+        run: dart run tool/bin/check_offline.dart
+
+  android-release-build:
+    # A release build on every change, so the merged release manifest (with
+    # every plugin's permissions) is checked long before a store release.
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-app
+        with:
+          android: 'true'
+      - name: Build release APK
+        working-directory: apps/trakta_app
+        run: flutter build apk --release
+      - name: Merged release manifest has no INTERNET permission
+        run: dart run tool/bin/check_offline.dart

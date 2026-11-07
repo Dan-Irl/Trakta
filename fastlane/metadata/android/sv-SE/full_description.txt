@@ -1,0 +1,37 @@
+Trakta håller koll på dina ersättningar och avdrag för jobbresor under året och visar vilket belopp som hör till vilken ruta i deklarationen.
+
+TRAKTAMENTE
+• Tjänsteresor i Sverige och utomlands, med normalbeloppen för alla länder
+• Hel- och halvdagar, nattraktamente och avdrag för fria måltider, dag för dag
+• Måltider och logi för hela resan, med ändringar för enskilda dagar
+• Jämför med vad arbetsgivaren har betalat: skattefritt, skattepliktigt och vad du kan dra av (ruta 1.2 och 2.2)
+• Underlag för avdrag i enskild firma
+
+TJÄNSTEKÖRNING
+• Körjournal med mätarställning eller sträcka
+• Egen bil eller förmånsbil: bensin, diesel, laddhybrid eller el
+• Bilersättning från arbetsgivaren, trängselskatt och vägavgifter
+
+RESEAVDRAG
+• Pendlingsschema per vecka: helgdagar, tjänsteresor och lediga dagar räknas bort
+• Gränsen på 15 000 kr, 5 km-regeln och kostnader för trängselskatt, avgifter och parkering
+• Hittills i år och en prognos för hela året
+
+ÖVERSIKT OCH FÖRKLARINGAR
+• Startsidan visar ditt förväntade avdrag för året
+• ”Varför?” vid varje belopp visar regeln bakom
+• Spara biljetter, bokningar och kvitton vid resan eller körningen
+
+DINA DATA STANNAR I TELEFONEN
+• Ingen internetåtkomst, inget konto, ingen reklam och ingen spårning
+• Allt sparas krypterat i telefonen
+• Öppen källkod (Apache-2.0): vem som helst kan granska hur appen räknar
+• Byter du telefon gör du en lösenordsskyddad säkerhetskopia, som fungerar mellan Android och iPhone
+• Helt gratis
+
+Svenska och engelska. Inkomståret 2026; appen uppdateras inför varje nytt inkomstår.
+
+BRA ATT VETA
+Trakta räknar inte med den sänkta ersättningen vid långa förrättningar (mer än tre månader på samma ort). Har du en sådan resa, kontrollera beloppen själv.
+
+Trakta är inte skatterådgivning och har ingen koppling till Skatteverket. Beräkningarna bygger på Skatteverkets publicerade schablonbelopp och regler, men du ansvarar själv för din deklaration.

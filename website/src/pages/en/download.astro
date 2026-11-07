@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import Download from '../../components/Download.astro';
+import { site } from '../../site';
+import { t } from '../../i18n';
+
+const c = t.en.download;
+---
+
+<Base lang="en" title={`${c.meta.title} – ${site.name}`} description={c.meta.description} alternate={t.sv.download.href}>
+  <Download lang="en" />
+</Base>

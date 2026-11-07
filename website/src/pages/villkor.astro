@@ -1,0 +1,86 @@
+---
+import Legal from '../layouts/Legal.astro';
+import { site } from '../site';
+---
+
+<Legal
+  lang="sv"
+  title="Användarvillkor"
+  description="Villkor för att använda Trakta: gratis, inte skatterådgivning och utan garantier."
+  alternate="/en/terms/"
+>
+  <div class="summary">
+    <p>
+      <strong>Kort sagt:</strong> Trakta är gratis och ett hjälpmedel, inte skatterådgivning. Du ansvarar själv för din
+      deklaration och för att kontrollera beloppen.
+    </p>
+  </div>
+
+  <h2>Om Trakta</h2>
+  <p>
+    Trakta är en gratis app som hjälper dig att hålla koll på traktamente, tjänstekörning och reseavdrag. Den utvecklas som
+    öppen källkod av {site.author} som privatperson. Genom att använda appen eller den här webbplatsen godkänner du de här
+    villkoren.
+  </p>
+
+  <h2>Inte skatterådgivning</h2>
+  <p>
+    Trakta räknar med Skatteverkets publicerade schablonbelopp och regler så som jag har tolkat dem. Beräkningarna kan
+    innehålla fel eller vara inaktuella, och din situation kan skilja sig från det appen utgår från. Trakta är inte
+    skatterådgivning och har ingen koppling till Skatteverket.
+  </p>
+
+  <h2>Ditt ansvar</h2>
+  <ul>
+    <li>Du ansvarar själv för uppgifterna du lämnar i din deklaration. Kontrollera beloppen innan du skickar in.</li>
+    <li>Spara de underlag Skatteverket kan begära, till exempel kvitton och körjournal.</li>
+    <li>Är du osäker, läs på <a href="https://www.skatteverket.se" rel="noopener">skatteverket.se</a> eller fråga Skatteverket eller en skatterådgivare.</li>
+  </ul>
+
+  <h2>Dina uppgifter</h2>
+  <p>
+    Allt du registrerar sparas bara i din telefon (se <a href="/integritet/">integritetspolicyn</a>). Du ansvarar själv för
+    att säkerhetskopiera det du vill behålla. Tar du bort appen eller tappar bort telefonen försvinner uppgifterna.
+  </p>
+
+  <h2>Ingen garanti</h2>
+  <p>
+    Appen och webbplatsen tillhandahålls i befintligt skick, utan garantier av något slag om att de är felfria, fullständiga
+    eller passar ett visst syfte.
+  </p>
+
+  <h2>Ansvarsbegränsning</h2>
+  <p>
+    I den utsträckning lagen tillåter ansvarar jag inte för skada eller förlust som uppstår när du använder appen eller
+    webbplatsen, till exempel felaktiga uppgifter i en deklaration, skattetillägg eller förlorade uppgifter. Det här
+    begränsar inte ansvar som inte får begränsas enligt tvingande lag.
+  </p>
+
+  <h2>Öppen källkod och licens</h2>
+  <p>
+    Källkoden till Trakta är licensierad under <a href={`${site.repo}/blob/main/LICENSE`} rel="noopener">Apache License 2.0</a>.
+    När du använder, ändrar eller sprider koden gäller licensen, som har en egen friskrivning från garantier och en egen
+    ansvarsbegränsning.
+  </p>
+  <p>
+    Licensen ger ingen rätt att använda namnet Trakta, logotypen eller appikonen. För dem gäller
+    <a href={site.trademarks} rel="noopener">varumärkespolicyn</a>.
+  </p>
+  <p>
+    Versioner som andra har byggt eller sprider kommer inte från mig. Jag står bara bakom versioner som laddas ner via
+    trakta.app eller från <a href={site.releases} rel="noopener">releaserna i GitHub-projektet Dan-Irl/Trakta</a>, och
+    bakom testversionen i Google Play.
+  </p>
+
+  <h2>Ändringar</h2>
+  <p>
+    Appen kan ändras, uppdateras eller sluta utvecklas. Villkoren kan ändras; den senaste versionen finns alltid här, med
+    datumet överst på sidan.
+  </p>
+
+  <h2>Tillämplig lag</h2>
+  <p>Svensk lag gäller för de här villkoren.</p>
+
+  <h2>Kontakt</h2>
+  <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+</Legal>

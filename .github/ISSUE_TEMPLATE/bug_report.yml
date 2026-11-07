@@ -1,0 +1,50 @@
+name: Bug report
+description: Something in the app or on trakta.app does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Issues are **public**: leave out names, addresses, registration numbers and other personal data, also in screenshots.
+        An amount that looks wrong? Use the "Wrong amount or rule" form instead. A security problem? See SECURITY.md and report it privately.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: And what did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Trips
+        2. Tap …
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Trakta version and where it came from
+      description: Shown at the bottom of Settings, e.g. "Version 1.1.0 (2), downloaded from GitHub".
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone and system version
+      placeholder: e.g. Pixel 8, Android 16
+  - type: dropdown
+    id: language
+    attributes:
+      label: App language
+      options: [Svenska, English]
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I have removed personal data from this report and its screenshots.
+          required: true

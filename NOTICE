@@ -1,0 +1,10 @@
+Trakta
+Copyright 2026 Dan Johansson and the Trakta contributors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+"Trakta" and the Trakta logo and app icon are trademarks of Dan Johansson.
+The Apache License does not grant permission to use them; see TRADEMARKS.md.
+
+The tax amounts in rules/ come from Skatteverket (the Swedish Tax Agency),
+which has no connection to this project.

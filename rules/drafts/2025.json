@@ -1,0 +1,56 @@
+{
+  "$schema": "./schema.json",
+  "incomeYear": 2025,
+  "packVersion": "2025.1",
+  "domestic": {
+    "fullDayKr": 290,
+    "halfDayKr": 145,
+    "nightKr": 145
+  },
+  "dayType": {
+    "departureFullIfBefore": "12:00",
+    "returnFullIfAfter": "19:00"
+  },
+  "mealReductionPct": {
+    "domestic": {
+      "breakfast": 20,
+      "lunch": 35,
+      "dinner": 35
+    },
+    "foreign": {
+      "breakfast": 15,
+      "lunch": 35,
+      "dinner": 35
+    }
+  },
+  "internationalTransitFullDay": "domestic_full_day",
+  "foreignRatesSource": "https://skatteverket.entryscape.net/rowstore/dataset/70ccea31-b64c-4bf5-84c7-673f04f32505",
+  "foreignRatesTakenOn": null,
+  "foreignFallback": "Övriga länder och områden",
+  "mileageOrePerMil": {
+    "own_car": 2500,
+    "company_car_non_electric": 1200,
+    "company_car_electric": 950
+  },
+  "pluginHybridWorkplaceChargingOkFrom": "2026-07-01",
+  "commute": {
+    "thresholdKr": 11000,
+    "carMinKm": 5,
+    "publicTransportMinKm": 2,
+    "minTimeSavedHours": 2,
+    "orePerMil": {
+      "own_car": 2500,
+      "company_car_non_electric": 1200,
+      "company_car_electric": 950,
+      "motorcycle": 1250,
+      "moped": 600
+    },
+    "bicycleKrPerYear": 350
+  },
+  "sources": [
+    "https://www.skatteverket.se/privat/skatter/arbeteochinkomst/traktamente.4.dfe345a107ebcc9baf80006547.html",
+    "https://www.skatteverket.se/utlandstraktamente",
+    "https://skatteverket.entryscape.net/store/9/resource/2430"
+  ],
+  "_draft": "Domestic, meal, mileage and commute values for 2025 are filled in. foreignRates, foreignRatesTakenOn are added by: cd tool; dart run bin/build_rules_pack.dart --year 2025"
+}

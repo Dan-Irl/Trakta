@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Dan-Irl/Trakta/rules/schema.json",
+  "title": "Trakta rules pack",
+  "description": "All tax numbers for one Swedish income year. See docs/rules-packs.md. Semantic checks (redirects resolve, fallback exists, amounts positive) live in trakta_core's validateRulesPack and run in CI.",
+  "type": "object",
+  "required": [
+    "incomeYear", "packVersion", "domestic", "dayType", "mealReductionPct",
+    "internationalTransitFullDay", "foreignRatesSource", "foreignRatesTakenOn", "foreignFallback",
+    "foreignRates", "mileageOrePerMil", "pluginHybridWorkplaceChargingOkFrom", "commute", "sources"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "incomeYear": { "type": "integer", "minimum": 2000, "maximum": 2100 },
+    "packVersion": { "type": "string", "pattern": "^[0-9]{4}\\.[0-9]+$" },
+    "domestic": {
+      "type": "object",
+      "required": ["fullDayKr", "halfDayKr", "nightKr"],
+      "properties": {
+        "fullDayKr": { "type": "integer", "exclusiveMinimum": 0 },
+        "halfDayKr": { "type": "integer", "exclusiveMinimum": 0 },
+        "nightKr": { "type": "integer", "exclusiveMinimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "dayType": {
+      "type": "object",
+      "required": ["departureFullIfBefore", "returnFullIfAfter"],
+      "properties": {
+        "departureFullIfBefore": { "$ref": "#/$defs/clock" },
+        "returnFullIfAfter": { "$ref": "#/$defs/clock" }
+      },
+      "additionalProperties": false
+    },
+    "mealReductionPct": {
+      "type": "object",
+      "required": ["domestic", "foreign"],
+      "properties": {
+        "domestic": { "$ref": "#/$defs/meals" },
+        "foreign": { "$ref": "#/$defs/meals" }
+      },
+      "additionalProperties": false
+    },
+    "internationalTransitFullDay": { "enum": ["domestic_full_day"] },
+    "foreignRatesSource": { "type": "string", "format": "uri" },
+    "foreignRatesTakenOn": { "$ref": "#/$defs/date" },
+    "foreignFallback": { "type": "string", "minLength": 1 },
+    "foreignRates": {
+      "type": "array",
+      "minItems": 100,
+      "items": {
+        "type": "object",
+        "required": ["name", "code", "kr"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "code": { "type": ["string", "null"], "pattern": "^[A-Z]{2}$" },
+          "kr": { "type": "integer", "exclusiveMinimum": 0 },
+          "redirectTo": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "mileageOrePerMil": {
+      "type": "object",
+      "required": ["own_car", "company_car_non_electric", "company_car_electric"],
+      "additionalProperties": { "type": "integer", "exclusiveMinimum": 0 }
+    },
+    "pluginHybridWorkplaceChargingOkFrom": { "$ref": "#/$defs/date" },
+    "commute": {
+      "type": "object",
+      "required": ["thresholdKr", "carMinKm", "publicTransportMinKm", "minTimeSavedHours", "orePerMil", "bicycleKrPerYear", "parking"],
+      "properties": {
+        "thresholdKr": { "type": "integer", "exclusiveMinimum": 0 },
+        "carMinKm": { "type": "integer", "minimum": 0 },
+        "publicTransportMinKm": { "type": "integer", "minimum": 0 },
+        "minTimeSavedHours": { "type": "integer", "minimum": 0 },
+        "orePerMil": { "type": "object", "additionalProperties": { "type": "integer", "exclusiveMinimum": 0 } },
+        "bicycleKrPerYear": { "type": "integer", "minimum": 0 },
+        "parking": {
+          "description": "Commuting parking is deductible only after regular use of the car in the job: at least minServiceMil mil over at least minServiceDaysForServiceDays days (parking on those days) or minServiceDaysForAllDays days (parking on all commuting days).",
+          "type": "object",
+          "required": ["minServiceMil", "minServiceDaysForServiceDays", "minServiceDaysForAllDays"],
+          "properties": {
+            "minServiceMil": { "type": "integer", "exclusiveMinimum": 0 },
+            "minServiceDaysForServiceDays": { "type": "integer", "exclusiveMinimum": 0 },
+            "minServiceDaysForAllDays": { "type": "integer", "exclusiveMinimum": 0 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "sources": { "type": "array", "minItems": 1, "items": { "type": "string", "format": "uri" } }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "clock": { "type": "string", "pattern": "^[0-2][0-9]:[0-5][0-9]$" },
+    "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "pct": { "type": "integer", "exclusiveMinimum": 0, "maximum": 100 },
+    "meals": {
+      "type": "object",
+      "required": ["breakfast", "lunch", "dinner"],
+      "properties": {
+        "breakfast": { "$ref": "#/$defs/pct" },
+        "lunch": { "$ref": "#/$defs/pct" },
+        "dinner": { "$ref": "#/$defs/pct" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

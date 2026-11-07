@@ -1,0 +1,1 @@
+Trakta är nu öppen källkod (Apache-2.0) och Android-versionen kan laddas ner direkt från trakta.app. Under Inställningar finns versionen, var uppdateringarna kommer ifrån, en länk till källkoden och licenserna för paketen appen använder.

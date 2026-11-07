@@ -1,0 +1,28 @@
+# A draft release was published (after testing its APK on a phone): rebuild
+# trakta.app, whose download page reads the latest release at build time.
+# Cloudflare Pages only rebuilds by itself for changes in website/.
+name: Release published
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  website:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: release
+    env:
+      DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_PAGES_DEPLOY_HOOK }}
+    steps:
+      - name: Rebuild trakta.app
+        run: |
+          if [ -z "$DEPLOY_HOOK" ]; then
+            echo "::warning::CLOUDFLARE_PAGES_DEPLOY_HOOK is not set: trakta.app shows the new version after the next website change (docs/releasing.md)."
+            exit 0
+          fi
+          curl -fsS -X POST "$DEPLOY_HOOK" > /dev/null
+          echo "trakta.app is rebuilding with the new release." >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,1 @@
+Trakta is now open source (Apache-2.0) and the Android version can be downloaded straight from trakta.app. Settings shows the version, where updates come from, a link to the source code and the licences of the packages the app uses.

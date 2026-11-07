@@ -1,0 +1,76 @@
+---
+import Base from './Base.astro';
+import { site } from '../site';
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  alternate: string;
+}
+const { lang, title, description, alternate } = Astro.props;
+const c = t[lang];
+---
+
+<Base lang={lang} title={`${title} – ${site.name}`} description={description} alternate={alternate}>
+  <article class="container legal">
+    <a class="back" href={lang === 'sv' ? '/' : '/en/'}>← {c.legal.back}</a>
+    <h1>{title}</h1>
+    <p class="updated">{c.legal.updated}: <time datetime={site.legalUpdated}>{site.legalUpdated}</time></p>
+    <slot />
+  </article>
+</Base>
+
+<style>
+  .legal {
+    max-width: 760px;
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+
+  .back {
+    display: inline-block;
+    margin-bottom: var(--space-lg);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 2.6rem);
+  }
+
+  .updated {
+    color: var(--muted);
+    margin-bottom: 40px;
+  }
+
+  .legal :global(h2) {
+    font-size: 1.3rem;
+    margin-top: 40px;
+  }
+
+  .legal :global(p),
+  .legal :global(li) {
+    color: color-mix(in srgb, var(--text) 85%, var(--muted));
+  }
+
+  .legal :global(ul) {
+    padding-left: 1.2em;
+  }
+
+  .legal :global(li) {
+    margin-bottom: 6px;
+  }
+
+  .legal :global(.summary) {
+    background: var(--positive-tint);
+    border: 1px solid color-mix(in srgb, var(--positive) 30%, transparent);
+    border-radius: var(--radius-card);
+    padding: var(--space-lg);
+  }
+
+  .legal :global(.summary p:last-child) {
+    margin: 0;
+  }
+</style>
